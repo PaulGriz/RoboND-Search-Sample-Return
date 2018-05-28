@@ -1,7 +1,7 @@
-> ## Project 1 Writeup: Search and Sample Return 
->> **Date:** May 28, 2018
->> **By:** Paul Griz
->> Project Submission for the Udacity Robotics Software Engineer Nanodegree
+> ## Project 1 Writeup: Search and Sample Return   
+>> **Date:** May 28, 2018   
+>> **By:** Paul Griz   
+>> Project Submission for the Udacity Robotics Software Engineer Nanodegree   
 
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 
@@ -42,11 +42,11 @@ def perspective_transform(img, src, dst):
 
 > The Output:
 
-![Perspective_Transform_Output](.\images\perspective_transform_output.PNG)
+![Perspective_Transform_Output](https://github.com/PgTower/Search-Sample-Return/blob/master/images/perspective_transform_output.PNG)
 
 The above output is used in mapping the roughly 200 x 200 meters world map.
 
-![The World Map](.\images\World-Map.png)
+![The World Map](https://github.com/PgTower/Search-Sample-Return/blob/master/images/World-Map.png)
 
 Clearing opposing data [Navigable terrain VS. Obstacles] greatly improved fidelity. 
 
@@ -64,7 +64,7 @@ Rover.worldmap[y_world, x_world, 0] -= 90
 
 By applying the mask and clearing the opposing data, the rover consistently achieves ~80-90% Fidelity. 
 
-![Fidelity Improvements Results](.\images\Fidelity-Results.PNG)
+![Fidelity Improvements Results](https://github.com/PgTower/Search-Sample-Return/blob/master/images/Fidelity-Results.PNG)
 
 2. The ``find_rocks()`` function: Used to find rocks by applying a RGB threshold to detect rock samples within the input threshold. Very similar to the ``color_thresh()`` function.
 
@@ -85,7 +85,7 @@ def find_rocks(img, levels=(110, 110, 50)):
 
 > The output:
 
-![Find_Rocks_Function_Output](.\images\Find_Rocks_Function_Output.PNG)
+![Find_Rocks_Function_Output](https://github.com/PgTower/Search-Sample-Return/blob/master/images/Find_Rocks_Function_Output.PNG)
 
 Once a rock has been located by the Rover, the rock is then added to the world map:
 
@@ -400,7 +400,7 @@ if Rover.console_log_counter >= 10.0:
 
 > Result:
 
-![Console-Example](.\images\Console-Example.PNG)
+![Console-Example](https://github.com/PgTower/Search-Sample-Return/blob/master/images/Console-Example.PNG)
 
 ---
 
